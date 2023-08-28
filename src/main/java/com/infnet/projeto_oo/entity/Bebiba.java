@@ -31,10 +31,6 @@ public class Bebiba extends Produto {
         this.marca = marca;
     }
 
-    @Override
-    public boolean check() {
-        return false;
-    }
 
     @Override
     public String toString() {

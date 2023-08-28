@@ -32,9 +32,11 @@ public class Sobremesa extends Produto{
     }
 
     @Override
-    public boolean check(Pedido pedido) {
-        if(pedido.getWeb())
-            return true;
-        return false;
+    public String toString() {
+        return "Sobremesa{" +
+                "quantidade=" + quantidade +
+                ", doce=" + doce +
+                ", informacao='" + informacao + '\'' +
+                '}';
     }
 }

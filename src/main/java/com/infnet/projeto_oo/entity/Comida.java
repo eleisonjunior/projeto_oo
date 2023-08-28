@@ -33,12 +33,11 @@ public class Comida extends Produto{
     }
 
     @Override
-    public boolean check(Pedido pedido) {
-        return pedido.getData().getDayOfWeek().equals(DayOfWeek.TUESDAY) ||
-                pedido.getData().getDayOfWeek().equals(DayOfWeek.WEDNESDAY) ||
-                pedido.getData().getDayOfWeek().equals(DayOfWeek.THURSDAY) ||
-                pedido.getData().getDayOfWeek().equals(DayOfWeek.FRIDAY) ||
-                pedido.getData().getDayOfWeek().equals(DayOfWeek.SATURDAY) ||
-                pedido.getData().getDayOfWeek().equals(DayOfWeek.SUNDAY);
+    public String toString() {
+        return "Comida{" +
+                "peso=" + peso +
+                ", vegano=" + vegano +
+                ", ingredientes='" + ingredientes + '\'' +
+                '}';
     }
 }
