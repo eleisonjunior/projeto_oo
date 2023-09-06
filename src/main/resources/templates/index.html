@@ -52,7 +52,7 @@
 
     <tr th:each="pedido : ${listPedidos}">
 
-        <td th:text="${pedido.descricao}"></td>
+        <td th:text="${pedido.toString()}"></td>
 
         <td th:text="${pedido.data}"></td>
 
