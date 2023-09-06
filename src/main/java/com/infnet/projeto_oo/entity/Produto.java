@@ -7,6 +7,7 @@ public abstract class Produto {
     private String nome;
     private BigDecimal valor;
 
+    public abstract boolean check(Pedido pedido);
 
     public Integer getCodigo() {
         return codigo;
