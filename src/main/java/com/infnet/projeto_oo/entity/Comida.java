@@ -1,5 +1,6 @@
 package com.infnet.projeto_oo.entity;
 
+import com.infnet.projeto_oo.exception.ComidaException;
 import lombok.extern.log4j.Log4j2;
 
 import java.math.BigDecimal;
@@ -42,10 +43,9 @@ public class Comida extends Produto{
                 pedido.getData().getDayOfWeek().equals(DayOfWeek.FRIDAY) ||
                 pedido.getData().getDayOfWeek().equals(DayOfWeek.SATURDAY) ||
                 pedido.getData().getDayOfWeek().equals(DayOfWeek.SUNDAY)) {
-            log.info("Não entregamos comida segunda-feira");
-            return true;
+            throw new ComidaException("Não entregamos comida segunda-feira");
         }
-        return false;
+        return true;
     }
 
     @Override

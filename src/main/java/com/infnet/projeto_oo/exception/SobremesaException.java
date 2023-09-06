@@ -3,13 +3,12 @@ package com.infnet.projeto_oo.exception;
 import lombok.experimental.StandardException;
 
 @StandardException
-public class BebidaException extends RuntimeException{
-    public BebidaException(String message) {
+public class SobremesaException extends RuntimeException{
+    public SobremesaException(String message) {
         super(message);
     }
 
-    public BebidaException(Throwable t) {
+    public SobremesaException(Throwable t) {
         super(t);
     }
-
 }

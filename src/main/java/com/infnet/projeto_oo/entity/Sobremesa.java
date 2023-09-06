@@ -1,5 +1,6 @@
 package com.infnet.projeto_oo.entity;
 
+import com.infnet.projeto_oo.exception.SobremesaException;
 import lombok.extern.log4j.Log4j2;
 
 import java.math.BigDecimal;
@@ -36,8 +37,7 @@ public class Sobremesa extends Produto{
     @Override
     public boolean check(Pedido pedido) {
         if(pedido.getWeb()){
-            log.info("Não entregamos sobremesa para pedidos feitos na web");
-            return false;
+            throw new SobremesaException("Não entregamos sobremesa para pedidos feitos na web");
         }
         return true;
     }

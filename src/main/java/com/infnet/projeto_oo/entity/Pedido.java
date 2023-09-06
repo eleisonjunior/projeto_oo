@@ -45,6 +45,14 @@ public class Pedido {
         this.produtos = produtos;
     }
 
+    public Solicitante getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Solicitante cliente) {
+        this.cliente = cliente;
+    }
+
     @Override
     public String toString() {
         return "Pedido{" +

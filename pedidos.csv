@@ -1,0 +1,15 @@
+Pedido 1,2023-09-01T22:30:00,true
+João Silva,11111111111,joaosilva@gmail.com
+Camarão Internacional,89.90,102,0.900,false,Arroz com camarão e queijo
+Coca-cola,5.00,9901,false,0.363,Açucar e xarope
+Cocada,14.99,123,0.400,true, Coco e mel
+Pedido 2,2023-09-03T19:00:00,false
+Maria das dores,22222222222,mariadasdores@gmail.com
+Frango a parmegiana,59.90,103,0.700,false,Arroz com camarão e queijo
+Fanta,5.00,9901,false,0.363,Açucar e xarope
+Brownie,14.99,124,0.200,true, Bolo de chocolate
+Pedido 3,2023-09-04T20:40:00,true
+Claudio Bretas,33333333333,claudiobretas@gmail.com
+Carne de sol,79.90,105,0.800,false,Carne e queijo coalho
+Suco de laranja,6.00,9903,false,0.363,Suco de laranja
+Sorvete,14.99,125,0.300,true, Sorvete de creme
