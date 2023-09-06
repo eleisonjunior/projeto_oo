@@ -36,4 +36,10 @@ class ComidaTest extends Produto {
     public static void main(String[] args) {
 
     }
+
+    @Override
+    public boolean check(Pedido pedido) {
+        Comida comida = new Comida();
+        return comida.check(pedido);
+    }
 }

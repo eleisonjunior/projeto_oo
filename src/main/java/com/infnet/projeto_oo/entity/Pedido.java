@@ -1,8 +1,10 @@
 package com.infnet.projeto_oo.entity;
 
+import lombok.extern.log4j.Log4j2;
+
 import java.time.LocalDateTime;
 import java.util.Set;
-
+@Log4j2
 public class Pedido {
 
     private String descricao;
@@ -41,6 +43,14 @@ public class Pedido {
 
     public void setProdutos(Set<Produto> produtos) {
         this.produtos = produtos;
+    }
+
+    public Solicitante getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Solicitante cliente) {
+        this.cliente = cliente;
     }
 
     @Override
